@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    /* Reset default margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Navigation - fixed at top */
+    nav {
+      background: #444;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Section */
+    section {
+      padding: 100px 20px 50px; /* push content below fixed nav */
+      background: #f4f4f4;
+    }
+
+    /* Slideshow */
+    .slideshow {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      height: 300px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(0%); }
+      44% { transform: translateX(-100%); }
+      77% { transform: translateX(-100%); }
+      88% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      .slideshow {
+        width: 95%;
+        height: 200px;
+      }
+      .slides img {
+        height: 200px;
+      }
+      header {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 769px) {
+      header {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Online Store</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Featured Products</h2>
+    <div class="slideshow">
+      <div class="slides">
+        <img src="https://picsum.photos/id/1015/600/300" alt="Product 1">
+        <img src="https://picsum.photos/id/1016/600/300" alt="Product 2">
+        <img src="https://picsum.photos/id/1018/600/300" alt="Product 3">
+      </div>
+    </div>
+    <p style="margin-top:20px;">Welcome to our featured products section! Scroll down to explore more.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Online Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

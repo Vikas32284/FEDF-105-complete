@@ -1,0 +1,547 @@
+desktop view:
+backgroung-color:blue;
+
+
+mobile view:
+@media screen and(max-width:600px)
+{
+
+body
+{
+background-color:red;
+}
+
+}
+---
+java script---always embed the js file in html file
+~~~~~~~~~~~
+
+more interactive
+
+can add dynamic behaviour to our web page
+
+show alert messages
+
+validation
+
+click
+
+programming
+
+client side
+
+
+
+id must be unique
+
+class name must be duplicate
+
+--------
+
+js is an programming language---we use jit compiler\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[just in time compiler]
+
+to run js need node js at server side
+
+for client web server is enough
+
+------------------------------------------------------------------------------------------------------------------------------
+
+3 ways:
+
+inline js---------------------onclick--------------<input type="button" value="onclick" onclick='alert("button was clicked")'/>
+
+event------action
+
+---------------------------------
+
+internal js:----we can write this in inside head tag or body tag
+
+\\\\\\\\\\\\\\\&nbsp;         we use a tag called script
+
+\\\\\\\\\\\\\\\&nbsp;      <script>
+
+\\\\\\\\\\\\\\\&nbsp;           //writing java script code
+
+\\\\\\\\\\\\\\\&nbsp;      </script>
+
+------------------------------------
+
+external js:
+
+
+
+\\\\\\\\\\\\\\\&nbsp;      <script src="myfirst.js"></script>
+
+------------------------------------
+
+start with letter
+
+dividing with ,
+
+can use underscore like sum\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_avg.
+
+-------------------------------------------
+
+inner.html
+
+inner.text
+
+console.log
+
+alert()
+
+window.alert()
+
+---------------------------------------------
+
+dom manipulation
+
+dom===========document object model
+
+-------------------------------------------------
+
+KEY WORD:
+
+------------------
+
+prompt method will read entire data in string
+
+
+
+
+
+operators
+
+control stmts
+
+arrays
+
+set
+
+map
+
+class objects
+
+event handling(DOM-document object model)
+
+
+
+event-----click on mouse scroll down are events
+
+read data-----DOM 
+
+action-----
+
+\\\\\\\\\\\\\\\&nbsp; take input in 2 ways-prompt, forms
+
+
+
+template literal `` = used to display multiple lines as output
+
+-------------------------------------------------------------
+
+data types ---7
+
+number
+
+strings
+
+Boolean
+
+undefine -- only we declare variable can't assign value
+
+nothin-- used for defining value null value
+
+symbol
+
+bigint ---must be end with n
+
+------------------------------------------------------------
+
+operators
+
+relational or comparison operator always stores result in boolean format---true or false
+
+-------------------------------------------------------
+
+control statements:
+
+if-else
+
+
+
+
+
+switch--will always take integer or string as an input.
+
+by using += it will print all the outputs from that number without using break statement
+
+
+
+loop control--for,while,do-while
+
+\\\\\\\\\\\\\\\&nbsp;
+
+unconditional control statements
+
+break, continue
+
+--------------------------------------------------------------------------------------------------------
+
+Arrow functions
+
+
+
+let/const/var  function\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_name=(parameter1,parameter2)=> return values
+
+
+
+let fun1=(n1,n2)=>"Addition="+(n1+n2);
+
+=>is used for the body function
+
+-----------------------------------------------------------------------------------------------------------
+
+Arrays:
+
+
+
+in 
+
+of are the new operators for accessing array elements
+
+-----------------------------------------------------------------------------------------------------
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*set:----\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*doesnot allows duplicate
+
+
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*syntax:\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*
+
+let num=new object SET(\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[10,20,30,10])
+
+console.log(num)
+
+num.add(11)
+
+--------------------------------------------------------------------------------------------------
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*Map:----\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*used for representing the pair of values
+
+syntax:
+
+let map = Map({"name":"asmita","id":1147})
+
+map.get(name);
+
+--------------------------------------------------------------------------------------------------
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*object:\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*---existed as physical thing in the real world----instance of a class is called object
+
+
+
+class person{
+
+name
+
+id
+
+age
+
+----------attributes
+
+danc()
+
+sleep()
+
+eat()
+
+--------methods
+
+}
+
+dot(.)=member accessing operator
+
+this=this keyword can be replaced by object name  -----------to make the difference when attribute names are same 
+
+new keyword=allocating memory
+
+constructor=initializing the values
+
+method=should produce some output have some return method
+
+-----------------------------------------------------------------------------------------------------------
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*classes \\\\\\\\\\\\\\\& objects:\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*
+
+class Person{
+
+let name;
+
+let id;
+
+
+
+Person(name,id)  //constructor
+
+{
+
+   this.name=name;
+
+   this.id=id;
+
+}
+
+d1()
+
+{
+
+}
+
+}
+
+
+
+class B extends person
+
+{
+
+ let marks;
+
+  B(name,id,marks)
+
+ {
+
+    super(name,id);
+
+    this.marks= marks;
+
+ }
+
+}
+
+let ramu=new Person("anu",06);
+
+-------------------------------------------------------------------------------
+event handling:
+
+
+
+unanimous function===if we can write or specify the function without writing any name
+
+
+
+<button id="btn">click me</button>
+
+
+
+<script>
+
+     document.getElementbyId("btn").addEventListener("click",function(){
+
+            window.alert("button was clicked");
+})
+
+</script>
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+form validation
+
+debugger-----represents the flow of execution of the program
+-----------------------------------------------------------------------
+\\\*\\\*modules\\\*\\\*
+
+type="module"
+
+m.js
+
+export function sum()
+{
+}
+
+---->>>>>>
+call.js
+import {sum();} from './m.js'
+import { function name } from './file\_name.js'
+
+sum();// invalid we called it in another file
+
+
+export-----make availability of modules
+until we write export we should not use the import keyword
+import-----used for using of the modules
+
+----->>>>>>
+
+mod.html
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*<script src="call.js"></script>\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*
+
+-----------------------------------------------------------------------------
+
+\\\*\\\*\\\\\\\*\\\\\\\*synchronous :\\\\\\\*\\\\\\\*\\\*\\\*
+
+execution of stmt should be done line by line 
+
+\\\*\\\*\\\\\\\*\\\\\\\*asynchronous:\\\\\\\*\\\\\\\*\\\*\\\*
+
+to handle this we need new method  \\\\\\\\\\\\\\\[setTimeOut()]
+
+
+
+async/await
+async---gives result as promise
+await---gives result as output of the promise // values of promise gives as a result
+----------------------------------------------------------------------------------------------------
+\\\*\\\*\\\\\\\*\\\\\\\*callback function:\\\\\\\*\\\\\\\*\\\*\\\*
+
+using of a function as parameter inside another function 
+
+
+
+function1(result,function2())   //func2 is called as call function
+
+function step1(value,f1()){
+
+f1(result of step1,errorstatus)
+
+
+true--error is there
+false--there is no error
+
+2nd parameter in call back function must be error status message
+--------------------------------------------------------------------------------------------------------
+\\\*\\\*\\\\\\\*\\\\\\\*promises\\\\\\\*\\\\\\\*\\\*\\\*------it is a object-link btw production code to the consumer code  ///call back hell
+
+
+new(resolve,reject)
+
+
+
+.then()==resolve state
+
+.catch()==reject state
+
+-------------------------------------------
+a>b-----production code
+
+console.log(a)-----consumer code
+production code====which contains the logic
+consumer code==== using of that logic to print the output
+-------------------------------------------------------------
+2 states
+
+initial-----promises can be created
+resolve----success
+reject----failure
+---------------------------------------
+
+any method 
+
+any(p1,p2)-------resolve
+parameters of promises
+race(p1,p2,p3)---p1 coz 1st one is evoked
+
+solve solution to callback hell
+
+
+async/await
+async---gives result as promise
+await---gives result as output of the promise // values of promise gives as a result
+------------------------------------------------------------------------------------------------------------------------------------------
+\\\*\\\*\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*fetch:\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*\\\*\\\*
+
+fetch("passing the url that contains the details what we want to fetch")-----when we want to fetch the data by specifying the url link----------object---in js----convert into JSON
+
+JSON-JavaScript object notation-------transfer data client to server
+it represents a pair of values  key \\\& value combination
+
+
+
+fetch("url")
+
+.then(response=>Respoense.JSON())
+
+console(response.data)
+
+\\\*\\\*\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*syntax:\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*\\\*\\\*
+
+{
+"name":"Asmitha",
+"id": 1147,
+"address": "Vijayawada"
+}
+
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*js object into JSON object-------JSON.stringify(jso)\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*
+
+\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*jsono   into jso-------JSON.parse(jsono)\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*
+
+------------------------------------------------------------
+\\\*\\\*\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*axios()\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*:\\\*\\\* ---predefined module
+
+axios.get("url");
+
+.then(response=>Response())
+
+console.log(data)
+
+
+used to fetch the data of the object  ------------JSON not required \\\[for axios]
+
+axios---------by importing this module we need not to use the JSON
+
+
+
+
+
+
+axios.grt("url");
+
+JSON---NO
+
+axios----url
+------------------------------------------------------------------------------
+\\\*\\\*\\\\\\\*\\\\\\\*exception handling:\\\\\\\*\\\\\\\*\\\*\\\*
+
+
+
+a=10/0;  //infinity value ---runtime error ----exception----abnormal termination
+
+console.log(a);
+
+
+try{
+
+    a=b/0; // in  which the line exception occurs
+
+   throw new Error("dividing by zero is wrong.");    // in js Error is predefined function    
+}
+
+catch(err ){  //err contains exception details
+
+   console.log(err.messgae());
+
+}
+
+finally{ // it will execute with or without exceptions
+
+  console.log("susccessfully executed");
+
+}
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

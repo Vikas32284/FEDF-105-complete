@@ -1,0 +1,29 @@
+css:
+
+inline stylesheet
+
+internal:
+
+<style>
+//selectors
+</style>    write this inside the head tag
+
+external:
+
+using file
+
+--------------------------------------------------------------------------
+
+list:
+unordered:
+         <ul>
+             <li> </li>
+        </ul>
+
+ ordered:
+      <ol>
+          <li> </li>
+      </ol>
+
+----------------------------------------------------------------------
+

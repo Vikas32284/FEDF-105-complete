@@ -1,0 +1,86 @@
+backend approach
+~~~~~~~~~~~~~~~~
+react with node.js
+node js=runtime environment for JS outside browser
+uses event loop (async execution)
+uses non-blocking I/O ->handles multiple requests effieciently 
+without browser or external server(Node js)
+backend (FSAD)---node js
+--------------------------------------------------------------------------------------------------------------
+client----server
+HTTP request methods
+hype text transfer protocol:
+request methods:
+POST-------if client want to send a request to server
+GET--------if we are expecting response from server
+PUT--------updating
+DELETE-----when we are willing to remove the given request(removing request)
+--------------------------------------------------------------------------------------------------------------
+main structure
+~~~~~~~~~~~~~~~
+
+src--
+|
+|--client-----folder
+|  |
+|  |__react project
+|
+|--server-----folder
+   |
+   |__js file
+--------------------------------------------------------------------------------------------------------------
+node js
+
+server ----
+json file
+npm install -y---jsonfile
+node filename with extension----will run in default port number---5000
+--------------------------------------------------------------------------------------------------------------
+run react project
+npm run dev
+default port number-5173
+------------------------------------------------------------------------------------------------
+setting node js in VS code
+
+-----------------------------------------------------------------------------------------------------------------------------------
+validation and sanitization
+
+
+
+
+
+mkdir myproject
+cd myproject
+
+
+npm init -y
+node filename
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+cors--cross origin resource sharing process
+
+connecting client and server when running in different port numbers
+--------------------------------------------------------------------------------------------------------------
+
+middleware-works in between request and response
+
+express will act as middleware
+middleware ----sets server configuration & cors-automatically
+server-----process
+response----json/html/tex-client
+--------------------------------------------------------------------------------------------------------------------
+restful end points
+ 
+rest----representational state transformation-----with full data
+
+-----------------------------------------------------------------------------------------------
+http---request methods:::::::::::::::
+POST-------if client want to send a request to server
+GET--------if we are expecting response from server
+PUT--------updating
+DELETE-----when we are willing to remove the given request(removing request)
+
+

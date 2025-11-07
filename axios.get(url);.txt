@@ -1,0 +1,88 @@
+axios.get("url");
+JSON---NO
+axios----url
+--------------------------------------------------------------
+react;jsx
+App.jsx
+html----code inside js
+------------------------------------------------------------
+npm install axios
+------------------------------------------------------------------------------------
+validation of form fields:
+---------------------------------------------------------------------------------
+local storage----------------in browser used to store the data permanently
+localstorage.set("name","venky");
+
+
+sessionstorage-----------------------temporary storage
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+props--immutablity---data passed from parent to child
+state
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+REACT
+--component based programming language
+--it is a java script file used to build reusable components
+js--html
+to use react program--use node js
+npx--
+vite--react can be used to build modern ui components with simplified configuration with less amount of time
+SWC--Speeding web compiler
+npm--node package manager
+to install basic packages or models---use npm install
+syntax: 
+class component name()
+{
+return{
+<>
+//html code
+</>
+}
+}
+functional
+--------------------------------------------------------------------------
+JSX SYNTAX AND EXPRESSIONS
+jsx---java script+xml
+Example:
+jsx
+function App(){
+   const name="Vangmai";
+return {
+<div>
+<h1>HELLO {name}
+---------------------------------------------------------------------------
+Props and state Management
+ Props--Data passed from parent to child--used for immutability
+ State--Components own memory--used to modify the data--the page to be rerender--predefined module->useState
+
+Example:
+jsx
+function Greeting(props)
+{
+return <h2>Hello, {props.name}!</h2>;
+}
+function App()
+{
+return (
+<div>
+<Greeting name="AK" />
+<Greeting name="VK" />
+</div>
+);
+}
+
+props.name->Receives name AK , VK
+----------------------------------------------------------------------------
+React router for navigation
+help to navigate from one page to another page
+commands used---npm install react-router-dom
+---------------------------------------------------------------------------------------------------
+reusable components & atomic design
+index.html ---> 
+main.jsx ----->  strictmode ----> current working directory   --->  mentioned file and gives output
+--------------------------------------------------------------------------------------
+state management with redux toolkit
+commands
+npm install @reduxjs/toolkit react-redux
+-------
+store initializes with{counter: {value:0}}
+
